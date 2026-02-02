@@ -1,0 +1,87 @@
+nav{
+     background-color: gray;
+    padding: 15px 20px;
+    margin: 0;
+    border-bottom: 15px solid rebeccapurple;
+}
+nav a {
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav li{
+    color: rebeccapurple;
+    font-size: 30px;
+    list-style: none;
+}
+nav a:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+
+
+
+h1{
+   color: rebeccapurple;
+   font-size: 90px;
+   font-family: 'MFPlexusItalicRegular';
+   text-align: center;
+  
+}
+h2{
+
+    text-align: center;
+    font-size: 55px;
+    font-family: 'NEWACADEMYNEWACADEMY';
+    color: rebeccapurple;
+    margin-bottom: 0px;
+}
+
+p{
+    color: gray;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+p strong{
+    color: rebeccapurple;
+}
+
+
+body{
+    background-color: #111;
+    margin: 0;
+}
+
+
+#MogucnostiList{
+list-style-position:inside;
+     text-align: center;
+    padding-left:  0;
+}
+#MogucnostiList dt{
+    color: rebeccapurple;
+  font-family: 'NEWACADEMYNEWACADEMY';
+    font-size: 55px;
+}
+#MogucnostiList ol{
+    color:  gray;
+    font-size: 35px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#MogucnostiList ol li::marker{
+    color:  rebeccapurple;
+    font-size: 33px;
+}
+
+.imgGYM{
+    display: flex;
+    justify-content: center;
+    border-radius: 45%;
+    overflow: hidden;
+}

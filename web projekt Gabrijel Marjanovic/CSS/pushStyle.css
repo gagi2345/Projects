@@ -1,0 +1,123 @@
+nav{
+     background-color: #111;
+    padding: 15px 20px;
+    margin: 0;
+    border-bottom: 15px solid rebeccapurple;
+}
+nav a {
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0;
+}
+.logo{
+    float: right;
+    color: rebeccapurple;
+    font-size: 90px;
+    font-family: 'MFPlexusItalicRegular';
+}
+
+
+nav li{
+    color: rebeccapurple;
+    font-size: 30px;
+    list-style: none;
+}
+nav a:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+body{
+    background-color: gray;
+    margin: 0;
+
+}
+
+h2{
+    color: rebeccapurple;
+    font-size: 80px;
+    font-family: 'MFPlexusItalicRegular';
+}
+
+h3{
+    color: rebeccapurple;
+    font-size: 55px;
+    font-family: 'NEWACADEMYNEWACADEMY';
+}
+p{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p strong{
+    color: rebeccapurple;
+}
+
+.pushDayGrid{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    min-width: 0;
+
+}
+.pushDayCard {
+  background: #111;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  color: green;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  flex-grow: inherit;
+}
+
+.pushDayCard img{
+  width: 700px;
+  height: 700px;
+  object-fit:contain;
+  display: block;
+  margin: 0 auto;
+
+}
+.unit{
+    color: white;
+    font-size: 35px;
+}
+
+.stepper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+
+}
+.stepBtn{
+    background-color: rebeccapurple;
+    font-size: 30px;
+    padding: 20px  ;
+    font-family: 'MFPlexusItalicRegular';
+    margin-bottom: 20px;
+
+}
+.stepper input{
+    background-color: #111;
+    border-color: #111;
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    font-family: 'MFPlexusItalicRegular';
+}
+.checkBtn{
+    display: block;
+    margin: 20px auto ;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+}
+.checkBtn.done{
+    background-color: green;
+
+}
