@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(9, 64, 146, 0.63);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003058;
+    padding: 40px 30px;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 70px;
+}
+
+nav .nav-links a{
+    color: #83b4ff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav .nav-links a:hover{
+    color: #3e82ff;
+}
+
+nav button{
+    background-color: #6787c4;
+    color: rgb(29, 49, 94);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav button:hover{
+    background-color: #83b4ff;
+}
+
+
+main{
+    width: 90%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+h2{
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* SEKCIJE */
+.forma-section,
+.tablica-section{
+    background-color: #003058;
+    padding: 30px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    box-shadow: 0 8px 20px rgba(3, 31, 107, 0.801);
+}
+
+.tablica-section h2{
+    font-size: 40px;
+}
+
+/* FORME */
+.projekt-forma{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.projekt-forma input,
+.projekt-forma select{
+    padding: 15px;
+    width: 260px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.projekt-forma button{
+    padding: 15px 35px;
+    background-color: #6787c4;
+    color: rgb(29, 49, 94);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.projekt-forma button:hover{
+    background-color: #83b4ff;
+}
+
+/* GREŠKA */
+.greska{
+    color: #ff0000 ;
+    text-align: center ;
+    font-size: 32px ;
+    font-weight: bold ;
+    margin: 20px 0;
+}
+
+/* TABLICE */
+.projekti-tablica{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.projekti-tablica th{
+    background-color: #6787c4;
+    color: #10264d;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.projekti-tablica td{
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #c9d8ff;
+    font-size: 16px;
+}
+
+.projekti-tablica tr:hover{
+    background-color: #dce9ff;
+}
+
+/* GUMBI U TABLICI */
+.zavrsi-btn{
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.zavrsi-btn:hover{
+    background-color: #27ae60;
+}
+
+.aktiviraj-btn{
+    background-color: #f39c12;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.aktiviraj-btn:hover{
+    background-color: #d68910;
+}
+
+.obrisi-btn{
+    background-color: crimson;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.obrisi-btn:hover{
+    background-color: darkred;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1300px){
+    nav .nav-links{
+        gap: 30px;
+    }
+
+    nav .nav-links a{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .tablica-section{
+        overflow-x: auto;
+    }
+
+    .projekt-forma input,
+    .projekt-forma select{
+        width: 90%;
+    }
+}

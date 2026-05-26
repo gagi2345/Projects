@@ -1,0 +1,506 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(157, 224, 255);
+    border-bottom: 7px solid #0071b3;
+  
+    
+}
+nav .login{
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+nav a{
+     display: flex;      
+    align-items: center;
+    margin-right: 60px;
+
+    position: relative;
+    color: #0071b3 ;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+nav a img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+nav .kontaktNav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+nav .OnamaNav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* animacija */
+@keyframes slideColors {
+    100% {
+        background-position: 0%;
+    }
+    0% {
+        background-position: 300%;
+    }
+}
+
+nav a:hover::after{
+    width: 100%;
+    background: linear-gradient(100deg, rgb(0, 102, 255), rgb(19, 141, 255), rgb(65, 211, 255), rgb(163, 226, 255), rgb(255, 255, 255));
+    background-size: 300%;
+    animation: slideColors 2s linear infinite;
+}
+nav a:hover{
+    color: rgb(91, 179, 255);
+}
+
+
+.OnamaNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav .zaposljavanje_dropdown::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.zaposljavanjeNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.zaposljavanje_dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgb(157, 224, 255);
+    min-width: 200px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.zaposljavanjeNav:hover .zaposljavanje_dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.zaposljavanje_dropdown-content a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    color: #0071b3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.zaposljavanje_dropdown-content a:hover {
+    background-color: rgb(120, 210, 255);
+    color: white;
+}
+
+.zaposljavanje_dropdown-content a::after {
+    display: none;
+}
+
+/* a*/
+
+
+nav .projekti_dropdown::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.projektiNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.projekti_dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgb(157, 224, 255);
+    min-width: 200px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projektiNav:hover .projekti_dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.projekti_dropdown-content a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    color: #0071b3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.projekti_dropdown-content a:hover {
+    background-color: rgb(120, 210, 255);
+    color: white;
+}
+
+.projekti_dropdown-content a::after {
+    display: none;
+}
+
+
+
+
+
+.bg_video{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+.home_section{
+    background:linear-gradient(to bottom, #77bfe9, #0d1b22) ;
+    text-align: center;
+
+}
+
+.home_intro h1{
+    font-size: 60px;
+    color: #034972;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home_intro p{
+    font-size: 30px;
+    line-height: 1.8;
+    font-weight: bolder;
+    color: #005f96;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.home_usluge{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.home_usluge h2{
+    font-size: 36px;
+    color: #005f96;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+     background: linear-gradient(100deg, #00a2ff, #0071b3, #039af1);
+    background-size: 200%;
+
+    background-clip:text;
+    color: transparent;
+
+    animation: slideColors 5s linear infinite;
+}
+.home_usluge ul{
+    list-style:decimal;
+    padding: 0;
+
+}
+.home_usluge li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #005f96;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home_zastoNasOdabrati{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.video_card{
+    position: relative;
+    width: 1500px;
+    max-width: 100%;
+    min-height: 600px;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(28, 179, 255, 0.486);
+  
+}
+.zasto_content a{
+    position: absolute;
+    top: 10px;
+    font-size: 6px;
+    color: black;}
+.bg_videoZasto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);    
+    
+}
+
+.video_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+.zasto_content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    padding: 45px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+.zasto_content h2 {
+     font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 150px;
+    background: linear-gradient(100deg, #ffffff, #d9f3ff, #7ed8ff);
+    background-size: 200%;
+ 
+    background-clip:text;
+    color: transparent;
+
+    animation: slideColors 5s linear infinite;
+}
+.zasto_content ul {
+     margin: 0;
+    padding: 150px;
+    
+}
+
+.zasto_content li {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.home_usluge{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.usluge_content a{
+    position: absolute;
+    
+    top: -1px;
+    font-size: 6px;
+    color: black;
+}
+.bg_videoUsluge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+  
+.usluge_content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    padding: 45px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.usluge_content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 150px;
+    background: linear-gradient(100deg, #ffffff, #d9f3ff, #7ed8ff);
+    background-size: 200%;
+ 
+    background-clip:text;
+    color: transparent;
+
+    animation: slideColors 5s linear infinite;
+}
+.usluge_content ul {
+    margin: 0;
+    padding: 150px;
+    
+}
+.usluge_content li {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.home_sigurnost{
+
+    padding: 40px 20px;
+    text-align: center;
+}
+.home_sigurnost h1{
+    font-size: 60px;
+    color: #005f96;
+    margin-bottom: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px;
+
+    background: linear-gradient(100deg, #eee347, #ffa90a, #c74646);
+    background-size: 200%;
+
+    background-clip: text;
+    color: transparent;
+    
+    animation: slideColors 5s linear infinite;
+}
+.home_sigurnost p{
+    font-size: 33px;
+    font-weight: bolder;
+    line-height: 1.8;
+    color: #005f96;
+    font-family: Arial, Helvetica, sans-serif;}
+
+footer {
+    background: #002f4b;
+    color: hsl(197, 100%, 87%);
+    padding: 30px  20px 10px 20px ;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+.footer_logo img {
+    width: 400px;
+    height: 400px;
+}
+
+.footer_kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+.footer_nav a{
+    text-decoration: none;
+    color: hsl(197, 100%, 87%);
+    font-size: 18px;
+}
+.footer_nav a:hover{
+    color: #0071b3;
+}
+.footer_nav li {
+    margin-bottom: 10px;
+        color: aquamarine;
+    text-decoration: none;
+}
+
+.footer_bottom {
+    border-top: 2px solid #0071b3;
+    margin-top: 130px;
+    text-align: center;
+}
+footer strong{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+footer h2{
+    font-size: 30px;
+    color: beige;
+}
+footer p{
+    font-size: 19px;
+}
+

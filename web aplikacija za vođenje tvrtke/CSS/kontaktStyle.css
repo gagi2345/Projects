@@ -1,0 +1,346 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to top, #9adaff, #0068beaf), url("../IMAGES/Kontakt/phone-call-icon-design-in-blue-circle-png.webp") ;
+    
+    background-size: contain, 800px ;
+    background-position: left  ;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+nav{
+    display: flex;
+    background-color: rgb(157, 224, 255);
+    border-bottom: 7px solid #0071b3;
+  
+    
+}
+nav .login{
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+nav a{
+     display: flex;      
+    align-items: center;
+    margin-right: 60px;
+
+    position: relative;
+    color: #0071b3 ;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+nav a img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+nav .kontaktNav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+nav .OnamaNav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* animacija */
+@keyframes slideColors {
+    100% {
+        background-position: 0%;
+    }
+    0% {
+        background-position: 300%;
+    }
+}
+
+nav a:hover::after{
+    width: 100%;
+    background: linear-gradient(100deg, rgb(0, 102, 255), rgb(19, 141, 255), rgb(65, 211, 255), rgb(163, 226, 255), rgb(255, 255, 255));
+    background-size: 300%;
+    animation: slideColors 2s linear infinite;
+}
+nav a:hover{
+    color: rgb(91, 179, 255);
+}
+
+
+.OnamaNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav .zaposljavanje_dropdown::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.zaposljavanjeNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.zaposljavanje_dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgb(157, 224, 255);
+    min-width: 200px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.zaposljavanjeNav:hover .zaposljavanje_dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.zaposljavanje_dropdown-content a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    color: #0071b3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.zaposljavanje_dropdown-content a:hover {
+    background-color: rgb(120, 210, 255);
+    color: white;
+}
+
+.zaposljavanje_dropdown-content a::after {
+    display: none;
+}
+
+/* a*/
+
+
+nav .projekti_dropdown::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.projektiNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.projekti_dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgb(157, 224, 255);
+    min-width: 200px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projektiNav:hover .projekti_dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.projekti_dropdown-content a {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    color: #0071b3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.projekti_dropdown-content a:hover {
+    background-color: rgb(120, 210, 255);
+    color: white;
+}
+
+.projekti_dropdown-content a::after {
+    display: none;
+}
+
+
+
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #00304d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li strong{
+    font-size: 50px;
+    color: #003350;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+     background: linear-gradient(100deg, #003b5e, #00598d, #039af1);
+    background-size: 200%;
+
+    background-clip:text;
+    color: transparent;
+
+    animation: slideColors 5s linear infinite;
+}
+
+h1{
+    font-size: 90px;
+    color: #003350;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+     background: linear-gradient(100deg, #003b5e, #00598d, #039af1);
+    background-size: 200%;
+
+    background-clip:text;
+    color: transparent;
+
+    animation: slideColors 5s linear infinite;
+}
+
+.kontakt p{
+    font-size: 50px;
+    line-height: 1.8;
+    font-weight: bolder;
+    color: #004268;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+footer {
+    background: #002f4b;
+    color: hsl(197, 100%, 87%);
+    padding: 30px  20px 10px 20px ;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+.footer_logo img {
+    width: 400px;
+    height: 400px;
+}
+
+.footer_kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+.footer_nav a{
+    text-decoration: none;
+    color: hsl(197, 100%, 87%);
+    font-size: 18px;
+}
+.footer_nav a:hover{
+    color: #0071b3;
+}
+.footer_nav li {
+    margin-bottom: 10px;
+        color: aquamarine;
+    text-decoration: none;
+}
+
+.footer_bottom {
+    border-top: 2px solid #0071b3;
+    margin-top: 130px;
+    text-align: center;
+}
+footer strong{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+footer h2{
+    font-size: 30px;
+    color: beige;
+}
+footer p{
+    font-size: 19px;
+}
+
